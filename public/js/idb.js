@@ -50,7 +50,7 @@ function saveRecord(record) {
               const budgetObjectStore = transaction.objectStore('new_budget');
               budgetObjectStore.clear();
     
-              alert('Saved budget details have been saved!');
+              alert('Budget details have been saved!');
             })
             .catch(err => {
               console.log(err);
