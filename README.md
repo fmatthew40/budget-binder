@@ -1,30 +1,30 @@
-## Social Hall
+## Budget Binder
 
  ## ![screenshot](https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Table of Contents
   1.  [License](#license)
-  2.  [Link to Demonstration Videos](#Link-to-Demonstration-Videos)
+  2.  [Screenshot](#Screenshot)
   3.  [Description](#description)
   4.  [Usage](#usage)
   5.  [Contributing](#contributing)
   6.  [Questions](#questions)
 
- ## Link to Demonstration Videos
- Part 1 (api/users and /api/users/:userId/friends/:friendId): https://youtu.be/aLzyKYOk12Q
+ ## Screenshot
+  ![budgetbinder](https://user-images.githubusercontent.com/93060262/158001683-45639e6e-c9e4-4e76-aba8-d0e69d4e7a44.png)
 
- Part 2 (api/thoughts and /api/thoughts/:thoughtId/reactions): https://youtu.be/LGmEbR9GFF0
+  <img width="1100" alt="Screen Shot 2022-03-11 at 8 46 18 PM" src="https://user-images.githubusercontent.com/93060262/158002586-4c1c31d1-527b-44b2-874f-a70ad87569a1.png">
 
  ## Description
- To start, I installed npm express.  Express.js allowed me to create and run a local server. I also installed mongoose.
- After I set up a local server with express, I set up my Thought and my User models.  I then set up my controllers.  I also added my routes.  I tested my routes with Insomnia.  
+ To start, I used "npm i" to install all of the dependencies that came in the starter code that I had.  Express.js allowed me to create and run a local server. The application also uses mongoose to store data.
+ After I set up a local server with express, I tested the application to ensure it was functional.  
 
- In addition, I installed moment.js.  I used moment.js to format the dates that were returned.  
+ The application allows the user to enter deposits and withdrawals to keep a running budget.  I added in IndexedDB so the application would have offline functionality.  When a user enters a deposit or withdrawal, the application will notify the user that it was added after the application comes back online.  
 
- The application will accept and return data using nosql.  The application is a social network that allows users to add friends, thoughts, and reactions.  
+ Service workers and a manifest were also added to assist with offline functionality.  
 
  ## Usage 
- The project's intended use is to act as a social network.  It is the backend of a social network.  It allows users to add friends, thoughts, and reactions.  
+ The project's intended use is to act as a budget tracker.  A user can keep track of their budget and make withdrawals and deposits to the running total.  The application can be run even when there is little to no internet.  
 
  ## Contributing 
  Contributions are not being accepted at this time.
