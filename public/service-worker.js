@@ -63,13 +63,15 @@ self.addEventListener('activate', function (e) {
 //     )
 //   })
 
+// evt
+
 self.addEventListener('fetch', function(e) {
     if (e.request.url.includes('/api/')) {
       e.respondWith(
         caches
           .open(CACHE_NAME)
           .then(cache => {
-            return fetch(evt.request)
+            return fetch(e.request)
               .then(response => {
                 if (response.status === 200) {
                   cache.put(e.request.url, response.clone());
