@@ -24,7 +24,7 @@
 
  Service workers and a manifest were also added to assist with offline functionality.  
 
- ## Link to Deployed Link
+ ## Deployed Link
  https://desolate-sea-00675.herokuapp.com/
 
  ## Usage 
